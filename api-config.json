@@ -1,0 +1,16 @@
+{
+  "api": {
+    "oauth2PermissionScopes": [
+      {
+        "adminConsentDescription": "Access MCP Server",
+        "adminConsentDisplayName": "Access MCP Server",
+        "id": "81671079-4944-441b-bec5-f07d26fb8934",
+        "isEnabled": true,
+        "type": "User",
+        "userConsentDescription": "Access MCP Server",
+        "userConsentDisplayName": "Access MCP Server",
+        "value": "access"
+      }
+    ]
+  }
+}
