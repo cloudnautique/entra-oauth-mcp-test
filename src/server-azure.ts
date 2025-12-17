@@ -241,10 +241,11 @@ app.use((req: Request, res: Response, next) => {
   const protocol = req.protocol || "http";
   const host = req.get("host") || `localhost:${process.env.PORT || 3000}`;
   const baseUrl = new URL(`${protocol}://${host}`);
+  const mcpUrl = new URL(`${protocol}://${host}/mcp`);
 
   const router = mcpAuthMetadataRouter({
     oauthMetadata: oauthMetadata,
-    resourceServerUrl: baseUrl,
+    resourceServerUrl: mcpUrl,
     scopesSupported: [`api://${clientId}/access`],
     resourceName: "Azure AD MCP Server",
     bearerMethodsSupported: ["header"],
